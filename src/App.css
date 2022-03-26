@@ -24,6 +24,11 @@ button {
 }
 
 @font-face {
+  font-family: 'Euclid Circular A';
+  src: url('Fonts/EuclidCircularA-Regular.woff');
+}
+
+@font-face {
   font-family: 'SangBleuKingdom-r';
   src: url('Fonts/SangBleuKingdom-Regular-WebXL.otf');
 }
