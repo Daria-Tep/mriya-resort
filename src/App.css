@@ -1,0 +1,34 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: url('Fonts/EuclidCircularB-Medium.woff');
+}
+
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: url('Fonts/EuclidCircularB-Light.woff');
+}
+
+@font-face {
+  font-family: 'SangBleuKingdom-r';
+  src: url('Fonts/SangBleuKingdom-Regular-WebXL.otf');
+}
+
+@font-face {
+  font-family: 'SangBleuKingdom-b';
+  src: url('Fonts/SangBleuKingdom-Bold-WebXL.otf');
+}

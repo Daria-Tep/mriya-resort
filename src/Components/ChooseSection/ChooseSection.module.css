@@ -1,0 +1,212 @@
+.chooseSection {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 86px;
+    border: 1px solid red;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1160px;
+    height: min-content;
+}
+
+.wrapper h2 {
+    position: relative;
+    font-family: 'SangBleuKingdom-b';
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0px;
+    color: #3D3C3C;
+    margin: 0;
+    margin-top: -5px;
+}
+
+.inputsWrapper {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.select {
+    width: 328px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    box-sizing: border-box;
+    margin-left: 8px;
+    -webkit-appearance: none;
+    background-image: url('../../Images/svg/select-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 96%;
+    font-family: 'Euclid Circular B';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    padding: 16px;
+    cursor: pointer;
+}
+
+
+input[type=date] {
+    position: relative;
+    width: 264px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    box-sizing: border-box;
+}
+
+
+input[type=date]::-webkit-calendar-picker-indicator {
+        position: relative;
+        width: 19px;
+        height: 17px;
+        color: transparent;
+        opacity: 1;
+        background: url('../../Images/svg/input-calendar.svg') no-repeat center;
+        background-size: contain;
+        right: 10px;
+        cursor: pointer;
+}
+
+input[type=date]::-webkit-datetime-edit-day-field,
+input[type=date]::-webkit-datetime-edit-month-field,
+input[type=date]::-webkit-datetime-edit-year-field,
+input[type=date]::-webkit-datetime-edit-text {  
+  display: none;
+}
+
+input[type=date]::after {
+    content: 'пт, 8 мая — вс, 17 мая';
+    display: block;
+    position: absolute;
+    font-family: 'Euclid Circular B';
+    font-weight: 300;
+    font-size: 16px;
+    color: #333333;
+    left: 16px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 392px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    box-sizing: border-box;
+}
+
+.totalItems{
+    width: 266px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Euclid Circular B';
+    font-weight: 300;
+    font-size: 16px;
+    color: #333333;
+    margin-left: 16px;
+}
+
+.totalIcon {
+    width: 20px;
+    height: 22px;
+    background-image: url('../../Images/svg/input-subtract.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 13px;
+}
+
+
+.search {
+    width: 144px;
+    height: 80px;
+    background: #3D3C3C;
+    font-family: 'Euclid Circular B';
+    font-weight: 300;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+
+.variants {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuContainer {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: min-content;
+    height: 40px;
+    margin-top: 32px; 
+    border-bottom: 1px solid #3d3c3c36;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: min-content;
+    height: inherit;
+    
+}
+
+.item div {
+   width: max-content;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.item {
+    font-family: 'Euclid Circular B';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #3D3C3C;
+    text-decoration: none;
+    margin-right: 48px;
+    
+}
+
+
+.active {
+    font-family: 'Euclid Circular B';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #BCA56A;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.active div {
+    width: max-content;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #BCA56A;
+   
+}
+

@@ -1,0 +1,221 @@
+
+.header {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Euclid Circular B';
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background-color: #ffffff;
+    border-bottom: 1px solid #3d3c3c23;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+}
+
+.headerWrapper {
+    max-width: 1160px;
+    width: 83%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    
+}
+
+.burgerIcon {
+    align-self: flex-start;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3d3c3c;
+    cursor: pointer;
+}
+
+.burgerItem {
+    position: relative;
+    width: 32px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.burgerItem::before {
+    content: '';
+    position: relative;
+    width: 32px;
+    height: 2px;
+    display: block;
+    bottom: 12px;
+    background-color: #fff;
+}
+
+.burgerItem::after {
+    content: '';
+    position: relative;
+    width: 24px;
+    height: 2px;
+    display: block;
+    top: 10px;
+    background-color: #fff;
+}
+
+
+.menu {
+    position: relative;
+    z-index: 100;
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 3px;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 66px;
+    height: 56px;
+    margin-left: 6.6%;
+    bottom: 5px;
+    
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    width: 83px;
+    height: 8px;
+    display: block;
+    top: 68px;
+    background-color: #ffffff;
+    background-image: url('../../Images/svg/stars.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.langs {
+    position: relative;
+    z-index: 100;
+    min-width: 80px;
+    display: flex;
+    justify-content: space-between;
+    top: 3px;
+    margin-left: 7.5%;
+    
+}
+
+.langsItem {
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+.langsItem.active {
+    color: #3D3C3C;
+}
+
+.entrance {
+    position: relative;
+    z-index: 100;
+    width: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 3px;
+    margin-left: 13.5%;
+    
+}
+
+.entrance span {
+    color: #ffffff;
+    border-bottom: 1px dashed #ffffff;
+}
+
+.phone {
+    position: relative;
+    z-index: 100;
+    width: 117px;
+    top: 3px;
+    margin-left: 3.5%;
+    color: #ffffff;
+}
+
+
+.flower {
+    position: absolute;
+    max-width: 960px;
+    width: 67%;
+    height: 940px;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    
+}
+
+.flowerGif {
+    position: absolute;
+    width: auto;
+    height: 940px;
+    z-index: 99;
+    mask-image: url('../../Images/svg/flower2.svg');
+    mask-size: cover;
+    mask-position: 100% 102%;
+    mask-repeat: no-repeat; 
+    left: 5.3%;
+    top: 0;
+}
+
+
+.flowerStroke {
+   position: absolute;
+   z-index: 98;
+   right: 0px;
+}
+
+
+.weatherWrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 720px;
+    height: 320px;
+    bottom: 2.9%;
+    right: 0;
+    background-image: url('../../Images/svg/intersect.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%; 
+}
+
+
+.intersectStroke {
+    position: absolute;
+    top: 6%;
+    right: 39%;
+}
+
+.weatherInfo {
+    position: relative;
+    width: min-content;
+    height: min-content;
+    top: 3%;
+    left: 15%;
+}
+
+
+
