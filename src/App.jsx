@@ -5,6 +5,7 @@ import Allinclusive from './Components/Allinclusive/Allinclusive';
 import ChooseSection from './Components/ChooseSection/ChooseSection';
 import FirstScreen from './Components/FirstScreen/FirstScreen';
 import Header from './Components/Header/Header';
+import Tablet from './Components/Tablet/Tablet';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <ChooseSection />
       <AboutComplex />
       <Allinclusive />
+      <Tablet />
     </div>
   );
 }
