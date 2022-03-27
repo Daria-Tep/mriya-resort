@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    padding-bottom: 80px;
 }
 
 .waves {
@@ -43,7 +44,7 @@
     align-items: center;
     padding-top: 86px;
     padding-bottom: 96px;
-    
+
 }
 
 .wrapper h2 {
