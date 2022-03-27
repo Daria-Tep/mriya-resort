@@ -1,0 +1,97 @@
+.aboutComplex {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.waves {
+    position: absolute;
+    top:-9px;
+}
+
+.cloudLeft,
+.cloudRight {
+    position: absolute;
+    z-index: 99;
+}
+
+.cloudLeft {
+    max-width: 365px;
+    width: 32%;
+    left: 0;
+    top: -242px;
+}
+
+.cloudRight {
+    max-width: 524px;
+    width: 45%;
+    right: 0;
+    top: 118px;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 640px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 86px;
+    padding-bottom: 96px;
+    
+}
+
+.wrapper h2 {
+    position: relative;
+    max-width: 560px;
+    width: 100%;
+    font-family: 'SangBleuKingdom-r';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    color: #3D3C3C;
+    text-align: center;
+    margin: 0;
+}
+
+.wrapper h2 span {
+    font-family: 'SangBleuKingdom-b';
+    font-weight: 700;
+}
+
+.icon {
+    position: relative;
+    top: 40px;
+}
+
+.wrapper p {
+    position: relative;
+    font-family: 'SangBleuKingdom-r';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #333333;
+    top: 60px;
+}
+
+.wrapper button {
+    position: relative;
+    width: 200px;
+    height: 64px;
+    font-family: 'Euclid Circular B';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #3D3C3C;
+    border: 1px solid #D9C287;
+    box-sizing: border-box;
+    border-radius: 8px;
+    top: 81px;
+}

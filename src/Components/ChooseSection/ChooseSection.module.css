@@ -11,6 +11,7 @@
     width: 90%;
     max-width: 1160px;
     height: min-content;
+    padding-bottom: 96px;
 }
 
 .wrapper h2 {
@@ -34,7 +35,7 @@
     background-color: #F6F6F6;
     border-radius: 8px;
     overflow: hidden;
-    margin-top: 48px;
+    margin-top: 50px;
 }
 
 .select {
