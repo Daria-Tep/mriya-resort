@@ -9,14 +9,15 @@ import Tablet from './Components/Tablet/Tablet';
 
 
 function App() {
+
   return (
     <div className="App">
-      <Header />
+      <Header  />
       <FirstScreen />
       <ChooseSection />
       <AboutComplex />
       <Allinclusive />
-      <Tablet />
+      <Tablet />   
     </div>
   );
 }

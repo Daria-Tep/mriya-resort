@@ -5,6 +5,8 @@ html {
 
 .App {
   margin: 0 auto;
+  width: 100%;
+ 
 }
 
 button {
@@ -24,6 +26,12 @@ button {
 }
 
 @font-face {
+  font-family: 'Euclid Circular B-L';
+  src: url('Fonts/EuclidCircularB-Light.ttf');
+}
+
+
+@font-face {
   font-family: 'Euclid Circular A';
   src: url('Fonts/EuclidCircularA-Regular.woff');
 }
@@ -37,3 +45,5 @@ button {
   font-family: 'SangBleuKingdom-b';
   src: url('Fonts/SangBleuKingdom-Bold-WebXL.otf');
 }
+
+

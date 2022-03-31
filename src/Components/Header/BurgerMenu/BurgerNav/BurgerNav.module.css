@@ -1,0 +1,24 @@
+.burgerNav {
+    position: relative;
+    width: 385px;
+    height: 560px;
+    overflow-y: scroll;
+    top: 4px;
+    right: 12px;
+}
+
+.burgerNav::-webkit-scrollbar {
+    position: relative;
+    width: 6px;
+}
+
+.burgerNav::-webkit-scrollbar-thumb {
+    width: 6px;
+    height: 128px;
+    background: #D9C287;
+    opacity: 0.32;
+    border-radius: 8px;
+}
+
+
+

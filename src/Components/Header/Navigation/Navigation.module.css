@@ -1,0 +1,18 @@
+.menu {
+    position: relative;
+    z-index: 100;
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 3px;
+}
+
+.menuItem {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.menuItem:hover {
+    color: #D9C287;
+}

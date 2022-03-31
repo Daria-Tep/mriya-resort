@@ -1,0 +1,34 @@
+.entrance {
+    position: relative;
+    z-index: 100;
+    min-width: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 3px;
+    margin-left: 13.5%;
+    cursor: pointer;
+}
+
+.entrance span {
+    color: #ffffff;
+    border-bottom: 1px dashed #ffffff;
+}
+
+.entrance svg {
+    width: 15px;
+    height: 8px;
+    fill: #ffffff;
+}
+
+
+@media screen and (max-width: 1370px) {
+    .entrance span {
+        color: #3D3C3C;
+        border-bottom: 1px dashed #3D3C3C;
+    }
+
+    .entrance svg {
+        fill: #3D3C3C;
+    }
+}

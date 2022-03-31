@@ -1,0 +1,37 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: min-content;
+    overflow-x: hidden;
+}
+
+
+.cardsContainer {
+    width: 100%;
+    height: min-content;
+    min-height: 232px;
+    display: flex;
+    margin-top: 32px;
+    transition: 1s;
+}
+
+.sliderArrows {
+    position: absolute;
+    z-index: 200;
+    top: -10px;
+    right: 0;
+    width: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrowLeft,
+.arrowRight {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+

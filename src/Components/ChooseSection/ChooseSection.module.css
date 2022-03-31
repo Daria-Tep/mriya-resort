@@ -212,29 +212,6 @@ input[type=date]::after {
 }
 
 
-.sliderArrows {
-    width: 96px;
-    display: flex;
-    justify-content: space-between;
-}
 
-.arrowLeft,
-.arrowRight {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.cardsContainer {
-    width: 100%;
-    height: min-content;
-    display: flex;
-    overflow-x: hidden;
-    margin-top: 32px;
-    
-}
 
 

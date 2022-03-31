@@ -1,29 +1,37 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import style from './Header.module.css';
 import logo from '../../Images/svg/logo.svg';
 import keyIcon from '../../Images/svg/key.svg';
 import flowerGif from '../../Images/gif/flower.gif';
 import flowerStroke from '../../Images/svg/flower_stroke.svg';
 import intersectStroke from '../../Images/svg/intersect_stroke.svg';
-import Weather from './Weather/Weather';
 
-const Header = () => {
+import Weather from './Weather/Weather';
+import BurgerMenu from './BurgerMenu/BurgerMenu';
+import Navigation from './Navigation/Navigation';
+
+import { useState } from 'react';
+import Logo from './Logo/Logo';
+import Entrance from './Entrance/Entrance';
+
+
+const Header = (props) => {
+
+  const [open, setOpen] = useState(false);
+  
     return (
         <div className={style.header} >
-          <div className={style.burgerIcon}>
-              <div className={style.burgerItem}></div>
+          <div className={`${style.burgerIcon} ${open ? style.right : style.left}`} onClick={() => { setOpen(!open) } } >
+              <div className={`${style.burgerItem} ${open ? style.right : style.left}`}></div>
           </div>
 
+          {open ? <BurgerMenu isOpen={true} /> : <BurgerMenu isOpen={false} />}  
+
           <div className={style.headerWrapper}>
-              <div className={style.menu}>
-                  <div className={style.menuItem}>О комплексе</div>
-                  <div className={style.menuItem}>Блог</div>
-                  <div className={style.menuItem}>FAQ</div>
-                  <div className={style.menuItem}>Контакты</div>
-              </div>
+             <Navigation textColor='#3D3C3C' />
               
               <div className={style.logo}>
-                 <img src={logo} alt="logo" />
+                 <Logo />
               </div>
               
               <div className={style.langs}>
@@ -31,10 +39,7 @@ const Header = () => {
                   <span className={style.langsItem}>ENG</span>
               </div>
 
-              <div className={style.entrance}>
-                  <img className={style.keyIcon} src={keyIcon} alt="key" />
-                  <span>Вход</span>
-              </div>
+              <Entrance />
 
               <span className={style.phone}>8 800 500 6847</span>
           </div>

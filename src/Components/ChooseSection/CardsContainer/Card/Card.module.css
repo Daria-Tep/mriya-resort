@@ -6,6 +6,19 @@
     align-items: end;
     margin-right: 40px;
     cursor: pointer;
+    animation: .8s slow ease-in-out;
+}
+
+@keyframes slow {
+    0% {
+        transform: translate(-7%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0%);
+        opacity: 1;
+    }
 }
 
 .circle {

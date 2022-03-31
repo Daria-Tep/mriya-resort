@@ -1,0 +1,9 @@
+.wrapper {
+    display: flex;
+    width: min-content;
+}
+
+.wrapper span {
+    min-width: 208px;
+    
+}
