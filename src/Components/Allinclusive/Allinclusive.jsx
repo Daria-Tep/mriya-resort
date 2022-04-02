@@ -1,25 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Allinclusive.module.css";
-import Description from "./Description/Description";
-import BigCard from "./BigCard/BigCard";
-import SmallCard from "./SmallCard/SmallCard";
-
-import bigCardImg from "../../Images/img/allinclusive-big.jpg";
-import smallCardImg from "../../Images/img/allinclusive-small.jpg";
-import mediumCardImg from "../../Images/img/allinclusive-medium.jpg";
 
 import marbleLeft from "../../Images/svg/marble-l.svg";
 import marbleRight from "../../Images/svg/marble-r.svg";
-import MediumCard from "./MediumCard/MediumCard";
+import AllinclusiveCards from "./AllinclusiveCards/AllinclusiveCards";
 
 const Allinclusive = () => {
+  const [slide, setSlide] = useState(0);
+  
+  let slides = [
+    <AllinclusiveCards title="Оздоровление" classAnimate='animate' />,
+    <AllinclusiveCards title="второй" />,
+    <AllinclusiveCards title="третий" classAnimate='animate'/>,
+  ];
+
+  const numberOfSlides = slides.length-1;
+
+  let changeSlide = (numberOfSlides, direction) => {
+    if (direction === "left" && slide < numberOfSlides) {
+      setSlide((slide) => slide + 1);
+    } else if (direction === "right" && slide > 0) {
+      setSlide((slide) => slide - 1);
+    } else if (direction === "right" && slide === 0) {
+      setSlide((slide) => (slide = numberOfSlides));
+    } else {
+      setSlide((slide) => (slide = 0));
+    }
+  };
+
+
+
   return (
     <div className={style.allinclusive}>
       <div className={style.wrapper}>
         <div className={style.titleBtnWrapper}>
           <h2>Все включено</h2>
           <div className={style.btnWrapper}>
-            <div className={style.leftBtn}>
+            <div
+              className={style.leftBtn}
+              onClick={() => {
+                changeSlide(numberOfSlides, "left");
+              }}
+            >
               <svg
                 width="12"
                 height="8"
@@ -33,7 +55,12 @@ const Allinclusive = () => {
                 />
               </svg>
             </div>
-            <div className={style.rightBtn}>
+            <div
+              className={style.rightBtn}
+              onClick={() => {
+                changeSlide(numberOfSlides, "right");
+              }}
+            >
               <svg
                 width="12"
                 height="8"
@@ -50,28 +77,7 @@ const Allinclusive = () => {
           </div>
         </div>
 
-        <div className={style.cardsWrapper}>
-          <BigCard
-            img={bigCardImg}
-            text="Заниматесь в тренажерном зале и посещайте групповые тренировки"
-          />
-
-          <div className={style.columnWrapper}>
-            <Description
-              title="Оздоровление"
-              paragraph="Mriya Resort — это маленький город со множеством возможностей, каждый найдет себе занятие по вкусу"
-            />
-            <SmallCard
-              img={smallCardImg}
-              text="Питаться в ресторане шведской линии согласно выбранному варианту"
-            />
-          </div>
-
-          <MediumCard
-            img={mediumCardImg}
-            text="Исследовать все общедоступные зоны и территории комплекса"
-          />
-        </div>
+        <div className={style.cardsWrapper}>{slides[slide]}</div>
 
         <img className={style.marbleLeft} src={marbleLeft} alt="marble" />
         <img className={style.marbleRight} src={marbleRight} alt="marble" />

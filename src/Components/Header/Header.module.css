@@ -149,7 +149,17 @@
     color: #3D3C3C;
 }
 
-
+.entrance {
+    position: relative;
+    z-index: 100;
+    min-width: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 3px;
+    margin-left: 13.5%;
+    cursor: pointer;
+}
 
 .phone {
     position: relative;
@@ -229,5 +239,16 @@
 @media screen and (max-width: 1439px) {
     .headerWrapper {
         justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .entrance span {
+        color: #3D3C3C;
+        border-bottom: 1px dashed #3D3C3C;
+    }
+
+    .entrance svg {
+        fill: #3D3C3C;
     }
 }

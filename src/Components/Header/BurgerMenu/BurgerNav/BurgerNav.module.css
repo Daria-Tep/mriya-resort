@@ -20,5 +20,19 @@
     border-radius: 8px;
 }
 
+@media screen and (max-width: 950px) {
+    .burgerNav {
+        width: 100%;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .burgerNav {
+        width: 100%;
+        height: min-content;
+        top: 0;
+    }
+}
 
 

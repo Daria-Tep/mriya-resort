@@ -3,6 +3,7 @@
     max-width: 260px;
     width: 100%;
     height: min-content;
+
 }
 
 
@@ -16,6 +17,7 @@ h3 {
     text-transform: uppercase;
     color: #999999;
     bottom: 8px;
+   
 }
 
 p {

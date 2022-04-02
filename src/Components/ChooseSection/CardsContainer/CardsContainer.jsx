@@ -12,12 +12,10 @@ const [pos, setPos] = useState(0);
  let changePosition = (direction, pos) => {
    if (direction === 'left' && pos < 0 ) {
       setPos(pos + 360);
-      console.log(pos)
    }
 
    if (direction === 'right' && pos >= -360 ) {
       setPos(pos - 360);
-      console.log(pos)
    }
 }
 

@@ -5,9 +5,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 3px;
-    margin-left: 13.5%;
-    cursor: pointer;
 }
 
 .entrance span {
@@ -22,13 +19,3 @@
 }
 
 
-@media screen and (max-width: 1370px) {
-    .entrance span {
-        color: #3D3C3C;
-        border-bottom: 1px dashed #3D3C3C;
-    }
-
-    .entrance svg {
-        fill: #3D3C3C;
-    }
-}

@@ -58,3 +58,16 @@
     letter-spacing: 0;
     top: 190px;
 }
+
+@media screen and (max-width: 950px) {
+    .submenu {
+        right: 0;
+    }
+    .submenuLink {
+        font-size: 22px;
+    }
+
+    .submenu p {
+       padding-right: 20px;
+    }
+}

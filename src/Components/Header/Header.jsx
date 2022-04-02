@@ -39,7 +39,10 @@ const Header = (props) => {
                   <span className={style.langsItem}>ENG</span>
               </div>
 
+              <div className={style.entrance}>
               <Entrance />
+              </div>
+              
 
               <span className={style.phone}>8 800 500 6847</span>
           </div>

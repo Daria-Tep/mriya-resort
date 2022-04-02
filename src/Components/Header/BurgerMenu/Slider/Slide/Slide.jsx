@@ -6,7 +6,7 @@ import circle from '../../../../../Images/png/slide-circle.png';
 const Slide = (props) => {
     return (
         <div className={style.slide}>
-           <img className={style.slideImg} src={props.img} alt='slide' />
+           <div className={style.slideImg} style={ {backgroundImage: `url(${props.img})`}} ></div>
            
            <img className={style.circle} src={circle} alt="circle" />
 
