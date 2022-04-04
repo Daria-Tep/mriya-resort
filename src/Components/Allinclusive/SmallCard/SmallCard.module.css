@@ -10,9 +10,13 @@
 }
 
 
-.bigcard img {
+.bigImg {
     width: 100%;
     height: auto;
+}
+
+.miniImg {
+    display: none;
 }
 
 .textWrapper {
@@ -20,8 +24,7 @@
     max-width: 228px;
     width: 100%;
     height: max-content;
-    top: 26px;
-    
+    top: 26px; 
 }
 
 .textWrapper p {
@@ -55,4 +58,36 @@
     background: #AB955E;
     bottom: 5px;
     left: 102px;
+}
+
+@media screen and (max-width: 1300px) {
+    .smallcard {
+        max-width: 560px;
+        width: 100%;
+    }
+
+    .textWrapper {
+        max-width: 528px;
+        width: 93%;
+    }
+
+    .bigImg {
+        display: none;
+    }
+
+    .miniImg {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .textWrapper {
+        width: 90%;
+        top: 24px;
+        left: 1px;
+    }
+
+
 }

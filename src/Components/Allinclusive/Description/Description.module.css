@@ -29,3 +29,9 @@ p {
     color: #3D3C3C;
     bottom: 3px;
 }
+
+@media screen and (max-width: 1300px) {
+    .description {
+        display: none;
+    }
+}

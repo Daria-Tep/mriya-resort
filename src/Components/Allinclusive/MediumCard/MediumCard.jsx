@@ -6,7 +6,8 @@ import style from './MediumCard.module.css';
 const MediumCard = (props) => {
     return (
        <div className={style.mediumcard}>
-           <img src={props.img} alt="img" />
+           <img className={style.bigImg} src={props.img} alt="img" />
+           <img className={style.miniImg} src={props.imgMini} alt="img" />
 
            <div className={style.textWrapper}>
                 <p>{props.text}</p>

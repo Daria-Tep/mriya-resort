@@ -6,7 +6,8 @@ import style from './BigCard.module.css';
 const BigCard = (props) => {
     return (
        <div className={style.bigcard}>
-           <img src={props.img} alt="img" />
+           <img className={style.bigImg} src={props.img} alt="img" />
+           <img className={style.miniImg} src={props.imgMini} alt="img" />
 
            <div className={style.textWrapper}>
                 <p>{props.text}</p>

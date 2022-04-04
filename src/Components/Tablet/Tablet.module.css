@@ -22,12 +22,51 @@
 .backgroundTitle {
     position: absolute;
     z-index: 100;
-   
-    top: 17%;
-    
+    top: 17%; 
 }
 
 .tabletSection svg {
    position: relative;
    bottom: 172px;
+}
+
+.cloud {
+    display: none;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .tabletImg {
+        width: 55%;
+        bottom: 0;
+    }
+
+    .backgroundTitle {
+       top: 30%;
+    }
+
+    .tabletSection svg {
+        bottom: 50px;
+     }
+}
+
+@media screen and (max-width: 670px) {
+   .tabletSection {
+       overflow: hidden;
+       height: 392px;
+   
+   } 
+    .tabletImg {
+        display: none;
+    }
+
+    .backgroundTitle {
+        display: none;
+    }
+
+    .tabletSection svg {
+        top: 120px;
+        bottom: 0;
+     }
 }

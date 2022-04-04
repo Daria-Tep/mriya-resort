@@ -67,6 +67,8 @@
 }
 .nav {
     position: relative;
+    max-width: 470px;
+    width: 35%;
     font-weight: 400;
     right: 20.6%;
 }
@@ -205,8 +207,12 @@
 
 
 @media  screen and (max-width: 1400px) {
+    .burgerHeader {
+        justify-content: start;
+        
+    }
     .nav {
-        right: 10%;
+        left: 10%;
     }
     .slider {
         display: none;
@@ -224,12 +230,18 @@
         width: 40%;
         left: 15%;
     }
+
+    .entrance {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1100px) {
     .submenu {
         left: 20%;
     }
+
+
 }
 
 @media  screen and (max-width: 950px) {
@@ -292,9 +304,7 @@
         align-items: center;
         height: min-content;
     }
-    .entrance {
-        display: none;
-    }
+  
     .nav {
         display: none;
     }

@@ -3,15 +3,16 @@ import style from "./Allinclusive.module.css";
 
 import marbleLeft from "../../Images/svg/marble-l.svg";
 import marbleRight from "../../Images/svg/marble-r.svg";
+import cloudLeft from '../../Images/png/cloud-l-mini.png';
 import AllinclusiveCards from "./AllinclusiveCards/AllinclusiveCards";
 
 const Allinclusive = () => {
   const [slide, setSlide] = useState(0);
   
   let slides = [
-    <AllinclusiveCards title="Оздоровление" classAnimate='animate' />,
-    <AllinclusiveCards title="второй" />,
-    <AllinclusiveCards title="третий" classAnimate='animate'/>,
+    <AllinclusiveCards title="Оздоровление" paragraph="Заниматесь в тренажерном зале и посещайте групповые тренировки" classAnimate='animate' />,
+    <AllinclusiveCards title="второй" paragraph="ТЕКСТ 2" classAnimate='animate' />,
+    <AllinclusiveCards title="третий" paragraph="ТЕКСТ 3"  />,
   ];
 
   const numberOfSlides = slides.length-1;
@@ -81,7 +82,9 @@ const Allinclusive = () => {
 
         <img className={style.marbleLeft} src={marbleLeft} alt="marble" />
         <img className={style.marbleRight} src={marbleRight} alt="marble" />
+     
       </div>
+      <img className={style.cloud} src={cloudLeft} alt="cloud" />
     </div>
   );
 };

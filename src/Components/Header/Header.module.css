@@ -30,6 +30,11 @@
     
 }
 
+.navWrapper {
+    width: 43%;
+    height: min-content;
+}
+
 .burgerIcon {
     align-self: flex-start;
     position: absolute;
@@ -161,6 +166,10 @@
     cursor: pointer;
 }
 
+.entranceMini {
+    display: none;
+}
+
 .phone {
     position: relative;
     z-index: 100;
@@ -181,6 +190,10 @@
     right: 0;
     overflow-x: hidden;
     
+}
+
+.flowerMini {
+    display: none;
 }
 
 .flowerGif {
@@ -242,13 +255,105 @@
     }
 }
 
-@media screen and (max-width: 1370px) {
-    .entrance span {
-        color: #3D3C3C;
-        border-bottom: 1px dashed #3D3C3C;
-    }
-
-    .entrance svg {
-        fill: #3D3C3C;
+@media screen and (max-width: 1290px) {
+    .weatherWrapper {
+        display: none;
     }
 }
+
+
+
+@media screen and (max-width: 1230px) {
+    .entrance  {
+        margin-left: 5%;
+    }
+
+}
+
+
+@media screen and (max-width: 1170px) {  
+    .phone {
+        color: #D9C287;
+
+    }
+    .logo,
+    .langs,
+    .entrance {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .header {
+        z-index: 110;
+    }
+    
+    .flower {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1030px) {
+    .headerWrapper {
+        justify-content: flex-end;
+    }
+    
+    .navWrapper {
+        display: none;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .logo {
+        margin-right: 17%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .logo {
+        margin-right: 13%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .langs {
+        display: none;
+    }
+
+    .logo {
+        margin-right: calc(50% - 120px);
+    }
+}
+
+@media screen and (max-width: 550px) {
+   .headerWrapper {
+       width: 100%;
+   }
+   
+    .entrance {
+       display: none;
+   }
+
+   .logo {
+       margin-right: calc(50% - 110px);;
+   }
+
+   .entranceMini {
+       width: 80px;
+       height: 80px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+ 
+   }
+   .entranceMini svg {
+       width: 30px;
+       height: 16px;
+       fill: #3D3C3C;
+   }
+}
+
+

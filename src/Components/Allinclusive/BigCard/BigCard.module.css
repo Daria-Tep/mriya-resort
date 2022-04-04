@@ -9,9 +9,13 @@
 }
 
 
-.bigcard img {
+.bigImg {
     width: 100%;
     height: auto;
+}
+
+.miniImg {
+    display: none;
 }
 
 .textWrapper {
@@ -54,4 +58,28 @@
     background: #AB955E;
     bottom: 5px;
     left: 102px;
+}
+
+@media screen and (max-width: 1200px) {
+    .bigcard {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bigcard {
+        width: 96%;
+    }
+   
+    .bigImg {
+        display: none;
+    }
+    .miniImg {
+        display: block;
+        width: 100%;
+    }
+
+    .textWrapper {
+        left: 7px;
+    }
 }

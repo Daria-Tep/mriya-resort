@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 260px;
-    width: 100%;
+    width: 23%;
     height: max-content;
     background: #FFFFFF;
     box-shadow: 0px 8px 16px rgba(142, 124, 78, 0.16);
@@ -15,9 +15,13 @@
 }
 
 
-.bigcard img {
+.bigImg {
     width: 100%;
     height: auto;
+}
+
+.miniImg {
+    display: none;
 }
 
 .textWrapper {
@@ -60,4 +64,53 @@
     background: #AB955E;
     bottom: 5px;
     left: 102px;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .mediumcard {
+        max-width: 560px;
+        width: 100%;
+        background: transparent;
+        box-shadow: none;
+        top: 0;
+        left: 0;
+        margin-top: 90px;
+        padding: 0;
+    }
+
+    .textWrapper {
+        max-width: none;
+        max-width: 528px;
+        width: 93%;
+    }
+
+    .bigImg {
+        display: none;
+    }
+    .miniImg {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mediumcard {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .mediumcard {
+        width: 96%;
+        top: 9px;
+    }
+    .textWrapper {
+        width: 90%;
+        margin-top: 23px;
+        left: 1px;
+    }
+
 }
